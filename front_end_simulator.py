@@ -3,7 +3,7 @@ import pickle
 
 HOST = "127.0.0.1"
 PORT = 4444
-message = b"chrysanthemum"
+message = b"European Silver Fir"
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
