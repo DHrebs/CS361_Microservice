@@ -1,7 +1,7 @@
 # Plant Care Communicator
 
 ## Overview
-The Plant Care Communicator is a tool that facilitates communication between a front end program that allows users to search for information on how to care for plants and a back end database that contains all of the plant care information. This tool utilizes an the API found at https://perenual.com/docs/api where you can find more information about interacting with their database.
+The Plant Care Communicator is a tool that facilitates communication between a front end program that allows users to search for information on how to care for plants and a back end database that contains all of the plant care information. This tool utilizes the Perenual API. (Visit https://perenual.com/docs/api to find more information about interacting with their database).
 
 The tool is implemented via the file plantCareCommunicator.py. This repository also comes with a file that simulates the front end user called front_end_simulator.py. While this file is not a part of the tool, it provides a convienient way to simulate a front end user. 
 
@@ -12,7 +12,7 @@ Data is sent to the Plant Care Communicator by sending the name of the plant to 
     LISTEN_HOST = "127.0.0.1"
     LISTEN_PORT = 4444
 
-If you want to have the microservice running on a computer seperate from where the front end is running, then you can change LISTEN_HOST to the remote IP address of the computer the microservice is running on. The LISTEN_PORT can be changed to any port that you want the microservice to listen on. Once the desired values for LISTEN_HOST and LISTEN_PORT are set, simply send the data from the front end to the specified IP address and port. Data should be sent as a bytestring. For example, in Python, if you wanted to retrieve data for Chrysanthemums, this should be formatted as:
+If you want to have the microservice running on a computer seperate from where the front end is running, then you can change LISTEN_HOST to the remote IP address of the computer the microservice is running on. The LISTEN_PORT can be changed to any port that you want the microservice to listen on. Once the desired values for LISTEN_HOST and LISTEN_PORT are set, simply send the data from the front end to the specified IP address and port. Data should be sent as a bytestring. For example, in Python, if you wanted to retrieve data for Chrysanthemums or the European Silver Fir, this should be formatted as:
 
     data = b"chrysanthemum"
     -OR-
