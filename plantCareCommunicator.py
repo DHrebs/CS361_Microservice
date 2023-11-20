@@ -1,7 +1,6 @@
 import socket
 import requests
 import json
-import pickle
 from dotenv import load_dotenv
 import os
 
@@ -40,9 +39,9 @@ def receiveData():
                 print(f"Received {data!r}. Sending to back end...")
                 stringData = data.decode()
                 plantCare = getPlantCare(stringData)
-                result = getDataFromJSON(plantCare)
+                result = json.dumps(getDataFromJSON(plantCare))
                 print(f"Received {result!r}. Sending to front end")
-                conn.sendall(pickle.dumps(result))
+                conn.sendall(result.encode())
 
 def main():
     configure()

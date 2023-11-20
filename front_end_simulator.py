@@ -1,5 +1,5 @@
 import socket
-import pickle
+import json
 
 HOST = "127.0.0.1"
 PORT = 4444
@@ -10,6 +10,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print(f"Sending {message!r}")
     s.sendall(message)
     newData = s.recv(1024)
-    result = pickle.loads(newData)
+    result = json.loads(newData.decode())
     for key in result:
         print(key + ": " + result[key])
