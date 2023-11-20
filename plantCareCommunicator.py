@@ -20,8 +20,6 @@ def getDataFromJSON(JSONData):
     data = JSONData['data']
     if len(data) == 0:
         return {"Error": "No Result Found"}
-    #for i in range(len(data)):
-        #print(data[i])
     newData = {"Common Name":data[0]['common_name'], "Scientific Name":data[0]["scientific_name"][0], "Water Needs":data[0]['section'][0]['description'], "Light Needs":data[0]['section'][1]['description'] }
     return newData
     
