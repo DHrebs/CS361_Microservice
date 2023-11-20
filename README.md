@@ -25,5 +25,6 @@ Data recieved by the front end is turned into a format the back end can understa
 
 The tool sends the plant name to the back end which returs the data associated with that plant. The back end responds with a dictionary. In order for a dictionary to be passed over sockets, it needs to be serialized. This is done with the python pickle library. The dictionary will need to be deserialized in the front end application to receive human readable data. 
 
-##UML Sequence Diagram
+## UML Sequence Diagram
+
 ![UML diagram](uml.png)
