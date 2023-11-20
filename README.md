@@ -3,7 +3,7 @@
 ## Overview
 The Plant Care Communicator is a tool that facilitates communication between a front end program that allows users to search for information on how to care for plants and a back end database that contains all of the plant care information. This tool utilizes the Perenual API. (Visit https://perenual.com/docs/api to find more information about interacting with their database).
 
-The tool is implemented via the file plantCareCommunicator.py. This repository also comes with a file that simulates the front end user called front_end_simulator.py. While this file is not a part of the tool, it provides a convienient way to simulate a front end user. 
+The tool is implemented via the file plantCareCommunicator.py. This repository also comes with a file that simulates the front end user called front_end_simulator.py. While this file is not a part of the tool, it provides a convienient way to simulate a front end user.
 
 ## Sending Data to the Microservice
 
@@ -48,3 +48,11 @@ The import os is required to reference the .env file in the url call via the com
 ## UML Sequence Diagram
 
 ![UML diagram](uml.png)
+
+## Communication Contract
+
+1. The standard response time is 24 hours.
+2. When there is an assignment due within 2 days, the maximum response time is 8 hours
+3. We will communicate on Discord
+4. Discuss any issues, be open to other opinions, and ask for help or clarification when a topic is unclear.
+5. If someone is to become behind schedule, they will let their teammate know as soon as possible. If the circumstances are going to have a long-term impact, the team member should reach out to the TA and instructor to inform them of the situation and create a plan that still allows the team to be successful.
